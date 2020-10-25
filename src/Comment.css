@@ -1,0 +1,12 @@
+.Comment {
+  background-color: #5C3636;
+  width: 80%;
+  margin-left: 10%;
+  height: auto;
+}
+
+h3 {
+  color: #EB7070;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}

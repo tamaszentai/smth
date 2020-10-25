@@ -1,3 +1,10 @@
+.Navigation {
+  font-family: 'Red Rose', cursive;
+  box-shadow: 1px 3px 5px black;
+  width: 80%;
+  margin-left: 10%;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -20,5 +27,5 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+  background-color: rgb(143, 119, 119);
 }

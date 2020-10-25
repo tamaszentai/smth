@@ -1,0 +1,12 @@
+.TopicTitle {
+  background-color: #802929;
+  width: 80%;
+  margin-left: 10%;
+  height: auto;
+}
+
+h3 {
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}

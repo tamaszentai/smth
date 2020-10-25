@@ -9,7 +9,7 @@ import AuthModal from './AuthModal';
 
 const Navigation = () => {
   return(
-    <div>
+    <div className="Navigation">
       <ul>
         <li>
           <Link>Latest</Link>
