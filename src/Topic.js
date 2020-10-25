@@ -12,7 +12,7 @@ const Topic = () => {
   const [comments, setComments] = useState([]);
 
   const sendHandler = (text) => {
-    setComments(comments => [...comments, text]);
+    setComments(comments => [text, ...comments]);
   }
   console.log(comments);
 
