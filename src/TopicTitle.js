@@ -6,15 +6,29 @@ const TopicTitle = (props) => {
 
   const [text, setText] = useState('');
 
+
   const comment = {author: 'default', reply: text}
 
   const sendHandler = () => {
-    props.sendHandler(comment)
+    if(text !== "" && text !== null){
+    props.sendHandler(comment);
+    clearState();
+    clear();
+    }
   }
 
-  let textarea = document.querySelector("textarea");
+  const clear = () => {
+    document.querySelector("textarea").value="";
+  }
+  
+  const clearState = () => {
+    setText(null);
+  }
+
+  
   const cancelHandler = () => {
-    textarea.value = '';
+    clearState();
+    clear();
   }
 
   const textHandler = (event) => {
@@ -23,7 +37,7 @@ const TopicTitle = (props) => {
   return(
     <div className="TopicTitle">
       <h3>{props.title.title}</h3>
-      <textarea className="textarea" cols="150" rows="5" style={{resize: "none"}} onChange={textHandler}></textarea>
+      <textarea id="textarea" cols="150" rows="5" style={{resize: "none"}} onChange={textHandler}></textarea>
       <br />
       <button onClick={sendHandler}>Send</button>
       <button onClick={cancelHandler}>Cancel</button>
@@ -32,4 +46,3 @@ const TopicTitle = (props) => {
 }
 
 export default TopicTitle;
-
